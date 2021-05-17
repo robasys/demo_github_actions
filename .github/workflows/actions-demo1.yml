@@ -1,6 +1,10 @@
 name: Actions workflow demo
 
-on: [push]
+# on: [push]
+on:
+  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
   run-shell-command:

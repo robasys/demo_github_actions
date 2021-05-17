@@ -1,0 +1,23 @@
+name: Actions workflow demo
+
+# on: [push]
+on:
+  workflow_dispatch:
+    branches:
+      - master
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+        run: |
+          pwd
+          ls
+      # - name: Simple java script action
+      #   id: greet
+      #   uses: actions/hello-world-javascript-action@v1
+      #   with:
+      #     who-to-greet: Hans
+      # - name: Log greeting time
+      #   run: echo "${{ steps.greet.outputs.time }}"

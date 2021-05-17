@@ -1,6 +1,9 @@
 name: Shell commands
 
-on: [push]
+on:
+  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
   run-shell-command:
