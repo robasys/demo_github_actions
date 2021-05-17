@@ -1,4 +1,4 @@
-name: Actions workflow demo
+name: Actions checkout workflow demo
 
 # on: [push]
 on:
