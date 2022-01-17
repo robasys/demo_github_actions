@@ -1,4 +1,4 @@
-name: MacOS Tests
+name: MacOS bootstrap java
 on:
   # push:
   #   branches: [ master ]
