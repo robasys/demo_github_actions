@@ -1,0 +1,14 @@
+
+
+###############################################################################
+#                               iOS secific lanes.                            #
+###############################################################################
+platform :ios do
+  lane :build do |options|
+  end
+end
+
+lane :tests do |options|
+  UI.message "Testing..."
+end
+
