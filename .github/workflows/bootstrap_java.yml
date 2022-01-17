@@ -22,5 +22,5 @@ jobs:
     - name: Setup java
       uses: actions/setup-java@v2
       with:
-        distribution: ${JAVA_DISTRIBUTION}
-        java-version: ${JAVA_VERSION}
+        distribution: $JAVA_DISTRIBUTION
+        java-version: $JAVA_VERSION
