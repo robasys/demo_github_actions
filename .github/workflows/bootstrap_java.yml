@@ -23,6 +23,6 @@ jobs:
       uses: actions/setup-java@v2
       with:
         #distribution: "$JAVA_DISTRIBUTION"
-        distribution: $JAVA_DISTRIBUTION
-        java-version: '11'
+        distribution: 'temurin'
+        java-version: $
         check-latest: true
