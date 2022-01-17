@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-latest
     env:
       JAVA_VERSION: "11.0"
-      FLUTTER_VERSION: "2.0.0"
+      FLUTTER_VERSION: "2.8.1"
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -23,11 +23,11 @@ jobs:
     - name: Setup java
       uses: actions/setup-java@v1
       with:
-        java-version: $
+        java-version: $JAVA_VERSION
     - name: Get flutter version
       uses: subosito/flutter-action@v1
       with:
-        flutter-version: $
+        flutter-version: $FLUTTER_VERSION
     - run: flutter pub get
     - run: flutter analyze
     - run: flutter test
