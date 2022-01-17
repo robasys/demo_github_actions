@@ -1,0 +1,26 @@
+name: MacOS Tests
+on:
+  # push:
+  #   branches: [ master ]
+  # pull_request:
+  #   branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  bootstrap:
+    name: Bootstrap
+    runs-on: macos-latest
+    env:
+      JAVA_VERSION: "11.0.4"
+      JAVA_DISTRIBUTION: "zulu"
+      FLUTTER_VERSION: "2.8.1"
+      XCODE_VERSION: ""
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    # see: https://github.com/actions/setup-java
+    - name: Setup java
+      uses: actions/setup-java@v2
+      with:
+        distribution: ${JAVA_DISTRIBUTION}
+        java-version: ${JAVA_VERSION}
