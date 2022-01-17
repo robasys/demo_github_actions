@@ -281,8 +281,10 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
+  universal-darwin-19
   universal-darwin-20
   universal-darwin-21
+
 
 DEPENDENCIES
   cocoapods
