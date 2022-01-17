@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
 jobs:
   bootstrap:
-    name: Bootstrap
+    name: Bootstrap java
     runs-on: macos-latest
     env:
-      JAVA_VERSION: "11.0.4"
+      JAVA_VERSION: "11"
       JAVA_DISTRIBUTION: "zulu"
       FLUTTER_VERSION: "2.8.1"
       XCODE_VERSION: ""
