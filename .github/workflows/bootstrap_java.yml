@@ -22,7 +22,10 @@ jobs:
     - name: Setup java
       uses: actions/setup-java@v2
       with:
-        #distribution: "$JAVA_DISTRIBUTION"
-        distribution: 'temurin'
         java-version: ${{ env.JAVA_VERSION }}
+        distribution: ${{ env.JAVA_DISTRIBUTION }}
         check-latest: true
+    - name: Show java version
+      run: java -version
+
+
