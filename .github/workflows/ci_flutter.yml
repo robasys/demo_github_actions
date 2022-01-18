@@ -22,8 +22,8 @@ jobs:
         flutter-version: ${{ env.FLUTTER_VERSION }}
     - name: flutter no analytics
       run: flutter config --no-analytics
-    - name: flutter accept android licenses
-      run: flutter doctor --android-licenses
+    #- name: flutter accept android licenses
+    #  run: flutter doctor --android-licenses
     - name: flutter doctor
       run: flutter doctor
     - name: flutter version
