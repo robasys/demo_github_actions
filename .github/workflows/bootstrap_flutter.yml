@@ -13,7 +13,7 @@ jobs:
     env:
       FLUTTER_VERSION: "2.8.1"
       JAVA_VERSION: "17"
-      JAVA_DISTRIBUTION: temurin
+      JAVA_DISTRIBUTION: "zulu"
     steps:
     - name: Checkout
       uses: actions/checkout@v2
