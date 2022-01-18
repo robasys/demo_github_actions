@@ -1,4 +1,4 @@
-name: bootstrap flutter (macos)
+name: ci flutter (ubuntu)
 on:
   # push:
   #   branches: [ master ]
@@ -6,13 +6,13 @@ on:
   #   branches: [ master ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+env:
+  FLUTTER_VERSION: "2.8.1"
 jobs:
   bootstrap:
     name: Bootstrap flutter
     #runs-on: macos-latest
     runs-on: ubuntu-latest
-    env:
-      FLUTTER_VERSION: "2.8.1"
     steps:
     - name: Checkout
       uses: actions/checkout@v2
