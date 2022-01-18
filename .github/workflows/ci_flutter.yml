@@ -28,10 +28,10 @@ jobs:
     - name: flutter doctor
       run: flutter doctor
     - name: flutter version
-      run: flutter pub get
+      run: flutter --version
 
-    #- run: flutter pub get
+    - run: flutter pub get
     #- run: flutter format --set-exit-if-changed .
-    #- run: flutter analyze
-    #- run: flutter test
-    #- run: flutter build apk --debug
+    - run: flutter analyze
+    - run: flutter test
+    - run: flutter build apk --debug
