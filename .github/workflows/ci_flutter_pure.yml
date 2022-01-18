@@ -17,11 +17,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Get flutter version
+    - name: Show java version
+      run: java -version
+    - name: Get flutter sdk
       uses: subosito/flutter-action@v1
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
-    - name: flutter no analytics
+    - name: flutter config no analytics
       run: flutter config --no-analytics
     #- name: flutter accept android licenses
     #  run: flutter doctor --android-licenses
@@ -29,9 +31,10 @@ jobs:
       run: flutter doctor
     - name: flutter version
       run: flutter --version
-
     - run: flutter pub get
     #- run: flutter format --set-exit-if-changed .
     - run: flutter analyze
     - run: flutter test
     - run: flutter build apk --debug
+    #- run: flutter build ios --release --no-codesign
+

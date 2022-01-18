@@ -26,7 +26,7 @@ jobs:
         check-latest: true
     - name: Show java version
       run: java -version
-    - name: Get flutter version
+    - name: Get flutter sdk
       uses: subosito/flutter-action@v1
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
