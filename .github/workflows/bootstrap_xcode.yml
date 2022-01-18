@@ -10,6 +10,7 @@ jobs:
   bootstrap:
     name: Bootstrap Xcode
     runs-on: macos-latest
+    timeout-minutes: 15
     env:
       XCODE_VERSION: "latest-stable"
     steps:
