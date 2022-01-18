@@ -1,4 +1,4 @@
-name: MacOS full
+name: ci/cd full (macos)
 on:
   # push:
   #   branches: [ master ]
@@ -44,7 +44,7 @@ jobs:
     - name: Get flutter sdk
       uses: subosito/flutter-action@v1
       with:
-        flutter-version: $FLUTTER_VERSION
+        flutter-version: ${{ env.FLUTTER_VERSION }}
     - run: flutter config --no-analytics
     #- run: flutter doctor --android-licenses
     - run: flutter doctor
