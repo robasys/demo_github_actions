@@ -1,5 +1,9 @@
+
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/robasys/demo_github_actions?sort=semver)
+
 # gtest_app
 
+https://github.com/robasys/demo_github_actions.git
 A new Flutter project.
 
 ## Getting Started
